@@ -12,7 +12,16 @@ data = {
 # 2️⃣ Create DataFrame
 df = pd.DataFrame(data)
 
+# 4️⃣ Add new row
+new_row = {
+    "id": 5,
+    "name": "Ankit",
+    "age": 26,
+    "city": "Mumbai"
+}
 
+
+df.loc[len(df)] = new_row
 # 4️⃣ Create data folder path
 data_dir = "data"
 
