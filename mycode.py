@@ -22,6 +22,18 @@ new_row = {
 
 
 df.loc[len(df)] = new_row
+
+
+# New row to add
+another_new_row = {
+    "id": 6,
+    "name": "Pooja",
+    "age": 24,
+    "city": "Jaipur"
+}
+
+# Add row
+df.loc[len(df)] = another_new_row
 # 4️⃣ Create data folder path
 data_dir = "data"
 
